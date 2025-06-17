@@ -22,7 +22,7 @@
   list-style-type: none;
 }
 
-.header__links-list-item_no-bullit .header__link_active .header__link {
+.header__link_active {
   text-decoration: none;
 }
 
@@ -103,8 +103,8 @@
 }
 
 .aligned-text_right {
+  margin-right: -30px;
   padding-top: 20px;
-  padding-left: 613px;
   text-align: right;
 }
 
@@ -175,6 +175,7 @@
 
 .card-link {
   height: 100%;
+  text-decoration: none;
 }
 
 .card {
@@ -225,8 +226,9 @@
 }
 
 .lots__look-more-link {
-  padding-top: 5px;
-  padding-left: 40px;
+  max-width: fit-content;
+  margin-top: 5px;
+  margin-left: 40px;
   color: #000;
   font-weight: 400;
   font-size: 20px;
@@ -276,16 +278,17 @@
   text-transform: uppercase;
 }
 
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .about__text {
-  padding-bottom: 30px;
   color: #000;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-}
-
-.no-padding {
-  padding-bottom: 0;
 }
 
 .footer {
@@ -307,8 +310,10 @@
 .footer__menu-list {
   display: flex;
   flex-direction: column;
+  gap: 1px;
+  padding-top: 5px;
   text-align: center;
-  text-underline-offset: 0.25em;
+  text-underline-offset: 4px;
 }
 
 .footer__menu-list-item {
@@ -321,6 +326,10 @@
   font-size: 18px;
   line-height: 100%;
   text-transform: lowercase;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
 }
 
 .footer__social-list {
